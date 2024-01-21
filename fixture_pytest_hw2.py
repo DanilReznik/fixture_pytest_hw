@@ -11,7 +11,7 @@ def test_search(browser_set):
 def test_search2(browser_set):
 
     browser.open('https://google.com')
-    browser.element('[name="q"]').should(be.blank).type('ilarion/halushka').press_enter()
-    browser.element('[id="search"]').should(have.text('Поиск не выдает результатов по вашему запросу'))
+    browser.element('[name="q"]').should(be.blank).type('asd12312312dsag').press_enter()
+    browser.element('[id="search"]').should(have.text('По запросу asd12312312dsag ничего не найдено'))
 
 

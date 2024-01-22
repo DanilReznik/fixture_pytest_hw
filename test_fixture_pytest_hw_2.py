@@ -13,5 +13,3 @@ def test_search2(browser_set):
     browser.open('https://google.com')
     browser.element('[name="q"]').should(be.blank).type('asd12312312dsag').press_enter()
     browser.element('[id="search"]').should(have.text('По запросу asd12312312dsag ничего не найдено'))
-
-
